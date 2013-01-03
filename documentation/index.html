@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>start.less</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="keywords" content="web app, webapp, app gestalt, design, framework, less, css, style, start">
+    <meta name="description" content="Startless is a lightweight (14kb) style library for web apps. It consist of just a few  .less files to easily get started with web applications for any devices.">
+    <meta name="author" content="Sebastian Sadowski, App Gestalt UG">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link href="style/start.css" rel="stylesheet">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="/img/ico/favicon.ico">
+    <!-- Standard iPhone --> 
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/ico/Icon.png" />
+    <!-- Retina iPhone --> 
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/ico/Icon@2x.png" />
+    <!-- Standard iPad --> 
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/ico/Icon-72.png" />
+    <!-- Retina iPad --> 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/ico/Icon-72@2x.png" />
+
+
+    <!-- iPhone (portrait) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-320x460.png"
+          media="(device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)"
+          rel="apple-touch-startup-image">
+    <!-- iPhone (landscape) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-460x320.png"
+          media="(device-width: 480px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)"
+          rel="apple-touch-startup-image">
+    <!-- iPhone (Retina, portrait) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-640x920.png"
+          media="(device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" 
+          rel="apple-touch-startup-image">
+    <!-- iPhone (Retina, landscape) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-920x640.png"
+          media="(device-width: 480px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+    <!-- iPhone 5 (portrait) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-640x1096.png"
+          media="(device-width: 320px) and (device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+    <!-- iPhone 5 (landscape) SPLASHSCREEN --> 
+    <link href="/img/ico/apple-touch-startup-image-1096x640.png"
+          media="(device-width: 568px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+    <!-- iPad (portrait) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-768x1004.png"
+          media="(device-width: 768px) and (orientation: portrait)"
+          rel="apple-touch-startup-image">
+    <!-- iPad (landscape) SPLASHSCREEN --> 
+    <link href="/img/ico/apple-touch-startup-image-748x1024.png"
+          media="(device-width: 768px) and (orientation: landscape)"
+          rel="apple-touch-startup-image">
+    <!-- iPad (Retina, portrait) SPLASHSCREEN -->
+    <link href="/img/ico/apple-touch-startup-image-1536x2008.png"
+          media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+          rel="/img/ico/apple-touch-startup-image">
+    <!-- iPad (Retina, landscape) SPLASHSCREEN -->
+    <link href="apple-touch-startup-image-1496x2048.png"
+          media="(device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+    <link href="_prettyCode/prettify.css" type="text/css" rel="stylesheet" /> 
+  	<script src="_prettyCode/prettify.js" type="text/javascript" ></script>
+  </head>
+
+  <body onload="prettyPrint()">
+ 
+<nav class="top">
+  <section class="center">
+      <a  class="collapse" href="#collapse">
+    <span></span><span></span><span></span> 
+      </a>
+      <a class="brand" href="http://libs.appgestalt.com">App Gestalt Libs</a>
+      <div id="collapse">
+          <a href="#typography">Typography</a>
+          <a href="#lists">Lists</a>
+          <a href="#tables">Tables</a>
+          <a href="#forms">Forms</a>
+          <a href="#icons">Icons</a>
+          <a href="#grid">Grid</a>
+          <a href="#layout">Layout</a>
+          <a href="#webapp">Web App</a>
+      </div>
+  </section>
+</nav>
+
+<article class="center">
+        <header id="intro">
+            <!--<img src="logo.svg">-->
+            <h1>start.less</h1>
+            <p class="lead">
+            Start.less is a lightweight (14kb) style library for web apps.<br/>
+            It is perfect to start with a webapp or just create a fast app-prototype.<br/>
+            
+            Start.less is based on a responsive layout, you can use several offered webfonts for your icons and customize your app easily with the included .less files. <br/><br/>
+        Download start.less on <a href="https://github.com/ahoiin/start.less">GitHub</a> or include it via
+        <a href="http://lib.appgestalt.com/startless/start.css">http://lib.appgestalt.com/startless/start.css</a>.<br/>
+        Check out the <a href="http://libs.appgestalt.com/startless/examples/starter/">Starter Template</a>.
+            </p>
+        </header>
+
+
+        <!-- Typography
+        ================================================== -->
+        <section id="typography">
+          <div class="page-header">
+            <h1>Typography</h1>
+          </div> 
+
+          <h2 id="headings">Headings</h2>
+          <p>All HTML headings, <i>&lt;h1&gt;</i> through <i>&lt;h6&gt;</i> are available.</p>
+          <div class="example border-radius">
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+          </div>
+
+          <h2 id="body-copy">Body</h2> 
+          <p>Start's global default <i>font-size</i> is <strong>13px</strong>, with a <i>line-height</i> of <strong>18px</strong>. This is applied to the <i>&lt;body&gt;</i> and all paragraphs. In addition, <i>&lt;p&gt;</i> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+          <div class="example"> 
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          </div>
+<pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
+
+
+          <hr>
+
+
+
+          <h3>Alternate displays</h3>
+          <p>Use <i>.right</i> or <i>.left</i> for a floated, right-aligned or left-aligned div.</p>
+          <div class="example">
+            <div class="right">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+&lt;div class="right"&gt;...&lt;/div&gt;
+</pre>
+
+          <div class="example">
+            <div class="left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+&lt;div class="left"&gt;...&lt;/div&gt;
+</pre>
+
+<hr>
+
+
+          <p>Use <i>.center</i> to center any content. The centered item needs a width. We just use the <a  href="#grid">grid</a>.</p>
+          <div class="example">
+            <div class="center s-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+&lt;div class="center s-3"&gt;...&lt;/div&gt;
+</pre>
+
+<hr>
+
+          <p>Use <i>.hidden</i> to hide an object</p>
+          <div class="example">
+            <span class="hidden">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+          </div>
+<pre class="prettyprint ">
+&lt;span class="hidden"&gt;...&lt;/span&gt;
+</pre>
+
+<hr>
+
+          <p>Use <i>.block</i> to display an item as block-level element.</p>
+          <div class="example">
+            <div class="block">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="block">
+              Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+&lt;div class="block"&gt;...&lt;/div&gt;
+</pre>
+
+<hr>
+
+          <p>Use <i>.inline</i> to display an item as inline element. It behaves also as a block element.</p>
+          <div class="example">
+            <div class="inline s-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Nulla volutpat aliquam velit.
+            </div>
+            <div class="inline s-6">
+              Integer posuere erat a ante. Aenean sit amet erat nunc. Vestibulum laoreet porttitor sem. Facilisis in pretium nisl aliquet.
+            </div>
+          </div>
+<pre class="prettyprint ">
+&lt;div class="inline s-6"&gt;...&lt;/div&gt;
+&lt;div class="inline s-6"&gt;...&lt;/div&gt;
+</pre>
+
+    </section>
+
+        <!-- Typography
+        ================================================== -->
+        <section id="lists">
+          <div class="page-header">
+            <h1>Lists</h1>
+          </div> 
+        
+          <h3>Unordered and unstyled list</h3>
+          <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+          <div class="example">
+            <ul >
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                      <ul>
+                      <li>Purus sodales ultricies</li>
+                      </ul>
+                  <li>Ac tristique libero volutpat at</li>
+                </ul>
+              </li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+          </div>
+<pre class="prettyprint lang-html">
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+        <hr>
+
+          <h3>Ordered list</h3>
+          <p>A list of items in which the order matter. </p>
+          <div class="example">
+            <ol> 
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Nulla volutpat aliquam velit
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Eget porttitor lorem</li>
+            </ol> 
+          </div>
+<pre class="prettyprint lang-html">
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+
+        <hr>
+ 
+ 
+          <h3>Unordered and styled list with bullets</h3>
+          <p>A list of items in which the order does <em>not</em> explicitly matter. Standard styled with bullets.</p>
+          <div class="example">
+            <ul class="styled"> 
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                      <ul>
+                      <li>Purus sodales ultricies</li>
+                      </ul>
+                  <li>Ac tristique libero volutpat at</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+          </div>
+<pre class="prettyprint lang-html">
+&lt;ul class="styled"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;ul&gt;...&lt;/ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        <hr>
+
+          <h3>Thumbnail List</h3>
+          <p>List Element with content such as an thumb image, headline and paragraph.</p>
+          <div class="example">
+            <ul>
+              <li>
+                <img src="img/image.png" />
+                <h4>Phasellus iaculis</h4>
+                <p>Facilisis in pretium nisl aliquet</p>
+              </li>
+              <li>
+                <img src="img/image.png" />
+                <h4>Phasellus iaculis</h4>
+                <p>Eget porttitor lorem</p>
+              </li>
+              <li>
+                <img src="img/image.png" />
+                <h4>Phasellus iaculis</h4>
+                <p>Faucibus porta lacus fringilla vel</p>
+              </li>
+              <li>
+                <img src="img/image.png" />
+                <h4>Eget porttitor lorem</h4>
+                <p>Eget porttitor lorem</p>
+              </li>
+            </ul>
+          </div>
+<pre class="prettyprint ">
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;img src="..." /&gt;
+    &lt;h4&gt;...&lt;/h4&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+        <hr>
+        
+          <h3>List-striped</h3>
+          <p>Adds zebra-striping to any list item via the <i>:nth-child</i> CSS selector (not available in IE7-IE8).</p>
+
+ <div class="example">
+            <ul class="striped">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit</li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+          </div>
+<pre class="prettyprint ">
+&lt;ul class="striped"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+    </section>
+
+
+        <!-- Tables
+        ================================================== -->
+        <section id="tables">
+          <div class="page-header">
+            <h1>Tables</h1>
+          </div>
+
+          <h3>Default styles</h3>
+          <p>For basic styling&mdash;light padding simple add no class at all. </p>
+          <div class="example">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint ">
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr>
+      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td>...&lt;/td&gt;
+      &lt;td>...&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+
+          <hr>
+
+
+          <h3>Table-striped</h3>
+          <p>Adds zebra-striping to any table row within the <i>&lt;tbody&gt;</i> via the <i>:nth-child</i> CSS selector (not available in IE7-IE8).</p>
+          <div class="example">
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint " style="margin-bottom: 18px;">
+&lt;table class="striped"&gt;
+  …
+&lt;/table&gt;
+</pre>
+
+
+
+ 
+
+
+        <!-- Forms
+        ================================================== -->
+        <section id="forms">
+          <div class="page-header">
+            <h1>Forms</h1>
+          </div>
+
+          <h3>Default styles</h3>
+          <p>Individual form controls receive styling, but without any required base class on the <i>&lt;form&gt;</i> or large changes in markup. Results in stacked, left-aligned labels on top of form controls.</p>
+          <form class="example">
+            <fieldset>
+              <label>Label name</label>
+              <input type="text" placeholder="Type something…">
+              <span class="help">Example block-level help text here.</span>
+              <label class="checkbox">
+                <input type="checkbox"> Check me out
+              </label>
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+<pre class="prettyprint ">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;label&gt;Label name&lt;/label&gt;
+    &lt;input type="text" placeholder="Type something…"&gt;
+    &lt;span class="help"&gt;Example block-level help text here.&lt;/span&gt;
+    &lt;label class="checkbox"&gt;
+      &lt;input type="checkbox"&gt; Check me out
+    &lt;/label&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+
+
+          <hr>
+
+
+          <h3>Optional layouts</h3>
+          <p>Included with Start are two optional form layouts for common use cases.</p>
+
+          <h3>Horizontal form</h3>
+          <p>Right align labels and float them to the left to make them appear on the same line as controls. Requires the most markup changes from a default form:</p>
+            Add <i>.horizontal</i> to the form, Wrap labels and controls in <i>.group</i>, Wrap any associated controls in <i>.controls</i> for proper alignment.
+          <form class="example horizontal">
+            <div class="group">
+              <label for="inputEmail">Email</label>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="group">
+              <label for="inputPassword">Password</label>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="group">
+              <div class="controls">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label> 
+                <button type="submit">Sign in</button>
+              </div>
+            </div>
+          </form>
+<pre class="prettyprint ">
+&lt;form class="horizontal"&gt;
+  &lt;div class="group"&gt;
+    &lt;label for="inputEmail"&gt;Email&lt;/label&gt;
+    &lt;div class="controls"&gt;
+      &lt;input type="text" id="inputEmail" placeholder="Email"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="group"&gt;
+    &lt;label for="inputPassword"&gt;Password&lt;/label&gt;
+    &lt;div class="controls"&gt;
+      &lt;input type="password" id="inputPassword" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="group"&gt;
+    &lt;div class="controls"&gt;
+      &lt;label class="checkbox"&gt;
+        &lt;input type="checkbox"&gt; Remember me
+      &lt;/label&gt;
+      &lt;button type="submit"&gt;Sign in&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+          <hr>
+
+
+          <h3>Compact form</h3>
+          <p>Form without labels and left-aligned. The send button is included
+           in the password field.</p>
+          <ul>
+            <li>Wrap password input field and submit button in <i>.control-compact</i>.</li>
+          </ul>
+          <form class="example">
+            <input type="text" id="inputEmail" placeholder="Email">
+            <div class="control-compact">
+                <input type="password" id="inputPassword" placeholder="Password">
+                <button type="submit" class="btn">Sign in</button>
+            </div>
+            <a class="password">Forgot password?</a>
+          </form>
+<pre class="prettyprint ">
+&lt;form&gt;
+  &lt;input type="text" id="inputEmail" placeholder="Email"&gt;
+  &lt;div class="control-compact"&gt;
+      &lt;input type="password" id="inputPassword" placeholder="Password"&gt;
+      &lt;button type="submit" class="btn"&gt;Sign in&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;a class="password"&gt;Forgot password?&lt;/a&gt;
+&lt;/form&gt;
+</pre>
+
+
+          <hr>
+
+
+          <h2>Supported form controls</h2>
+          <p>Examples of standard form controls supported in an example form layout.</p>
+
+          <h3>Inputs</h3>
+          <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+          <p>Requires the use of a specified <i>type</i> at all times.</p>
+          <form class="example form-inline">
+            <input type="text" placeholder="Text input">
+          </form> 
+<pre class="prettyprint ">
+&lt;input type="text" placeholder="Text input"&gt;
+</pre>
+
+		<hr>
+
+          <h3>Textarea</h3>
+          <p>Form control which supports multiple lines of text. Change <i>rows</i> attribute as necessary.</p>
+          <form class="example form-inline">
+            <textarea rows="3" placeholder="Textarea field..."></textarea>
+          </form>
+<pre class="prettyprint ">
+&lt;textarea rows="3" placeholder="Textarea field..."&gt;&lt;/textarea&gt;
+</pre>
+
+		<hr>
+
+          <h3>Checkboxes and radios</h3>
+          <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
+          <h4>Default (stacked)</h4>
+          <form class="example">
+            <label class="checkbox">
+              <input type="checkbox" value="">
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </form>
+<pre class="prettyprint ">
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" value=""&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+  Option one is this and that&mdash;be sure to include why it's great
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+  Option two can be something else and selecting it will deselect option one
+&lt;/label&gt;
+</pre>
+
+          <h3>Inline checkboxes</h3>
+          <p>Add the <i>.inline</i> class to a series of checkboxes or radios for controls appear on the same line.</p>
+          <form class="example">
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+            </label>
+          </form>
+<pre class="prettyprint ">
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
+&lt;/label&gt;
+</pre>
+
+		<hr>
+
+          <h3>Selects</h3>
+          <p>Use the default option or specify a <i>multiple="multiple"</i> to show multiple options at once.</p>
+          <form class="example">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <br>
+            <select multiple="multiple">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </form>
+<pre class="prettyprint ">
+&lt;select&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select multiple="multiple"&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+
+          <hr>
+
+
+          <h2>Extending form controls</h2>
+          <p>Adding on top of existing browser controls, Start includes other useful form components.</p>
+
+          <h3>Prepended and appended inputs</h3>
+          <p>Add text or buttons before or after any text-based input. Do note that <i>select</i> elements are not supported here.</p>
+
+          <h4>Default options</h4>
+          <p>Wrap an <i>.add-on</i> and an input field with one of the two classes to prepend or append text to an input.</p>
+          <form class="example">
+            <div class="input-append">
+              <input type="text" placeholder="Text input">
+              <span class="add-on">&euro;</span>
+            </div>
+          </form>
+<pre class="prettyprint ">
+&lt;div class="input-append"&gt;
+&lt;input type="text" placeholder="Text input"&gt;
+&lt;span class="add-on"&gt;&euro;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+          <form class="example">
+            <div class="input-prepend">
+              <span class="add-on">@</span>
+              <input type="text" placeholder="Text input"> 
+            </div>
+          </form>
+<pre class="prettyprint ">
+&lt;div class="input-prepend"&gt;
+&lt;span class="add-on"&gt;&euro;&lt;/span&gt;
+&lt;input type="text" placeholder="Text input"&gt;
+&lt;/div&gt;
+</pre>
+
+			<hr>
+          
+
+          <h3>Buttons instead of text</h3>
+          <p>Instead of a <i>&lt;span&gt;</i> tag with text, use a &lt;button&gt; to attach a button to an input.
+            <form class="example">
+              <div class="input-append">
+                <input type="text" placeholder="Text input">
+                <button>Go!</button>
+              </div>
+            </form>
+<pre class="prettyprint ">
+&lt;div class="input-append"&gt;
+&lt;input type="text" placeholder="Text input"&gt;
+&lt;button&gt;Go!&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+          
+
+
+          <form class="example"> 
+            <div class="input-prepend">
+              <button>Go!</button>
+              <input type="text" placeholder="Text input">
+            </div>
+          </form>
+<pre class="prettyprint ">
+&lt;div class="input-prepend"&gt;
+  &lt;button&gt;Go!&lt;/button&gt;
+  &lt;input type="text" placeholder="Text input"&gt;
+&lt;/div&gt;
+</pre>
+
+		<hr>
+
+          <h3>Grid sizing</h3>
+          <p>Use relative sizing classes like <i>.s1</i>. Use the <i>.block</i> class to create block elements.</p>
+
+
+          <h4>Relative sizing</h4>
+          <form class="example">
+              <input class="s-1 block" type="text" placeholder=".s-1">
+              <input class="s-2 block" type="text" placeholder=".s-2">
+              <input class="s-3 block" type="text" placeholder=".s-3">
+              <input class="s-4 block" type="text" placeholder=".s-4">
+              <input class="s-5 block" type="text" placeholder=".s-5">
+              <input class="s-6 block" type="text" placeholder=".s-6">
+              <input class="s-7 block" type="text" placeholder=".s-7">
+              <input class="s-8 block" type="text" placeholder=".s-8">
+              <input class="s-9 block" type="text" placeholder=".s-9">
+              <input class="s-10 block" type="text" placeholder=".s-10">
+              <input class="s-11 block" type="text" placeholder=".s-11">
+              <input class="s-12 block" type="text" placeholder=".s-12">
+          </form>
+<pre class="prettyprint ">
+&lt;input class="s-1 block" type="text" placeholder=".s-1"&gt;
+&lt;input class="s-2 block" type="text" placeholder=".s-2"&gt;
+&lt;input class="s-3 block" type="text" placeholder=".s-3"&gt;
+&lt;input class="s-4 block" type="text" placeholder=".s-4"&gt;
+&lt;input class="s-5 block" type="text" placeholder=".s-5"&gt;
+&lt;input class="s-6 block" type="text" placeholder=".s-6"&gt;
+&lt;input class="s-7 block" type="text" placeholder=".s-7"&gt;
+&lt;input class="s-8 block" type="text" placeholder=".s-8"&gt;
+&lt;input class="s-9 block" type="text" placeholder=".s-9"&gt;
+&lt;input class="s-10 block" type="text" placeholder=".s-10"&gt;
+&lt;input class="s-11 block" type="text" placeholder=".s-11"&gt;
+&lt;input class="s-12 block" type="text" placeholder=".s-12"&gt;             
+</pre>
+
+			<hr>
+
+          <h3>Grid sizing for all elements</h3>
+          <p>Use relative sizing classes like <i>.s-1</i> for input, textarea or select.</p>
+
+
+          <h4>Relative sizing</h4>
+          <form class="example">
+            <select class="s-2 block">
+              <option>s-2</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            <select class="s-4 block">
+              <option>s-4</option>
+              <option>2</option>
+              <option>3</option>
+            </select> 
+             <textarea rows="3" class="s-6" placeholder="s-6"></textarea>  
+             <textarea rows="3" class="s-12" placeholder="s-12"></textarea>            
+          </form>
+          
+<pre class="prettyprint ">
+&lt;select class="s-2 block"&gt;
+  &lt;option>s2&lt;/option&gt;
+  &lt;option>2&lt;/option&gt;
+  &lt;option>3&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="s-4 block"&gt;
+  &lt;option>s4&lt;/option&gt;
+  &lt;option>2&lt;/option&gt;
+  &lt;option>3&lt;/option&gt;
+&lt;/select&gt; 
+&lt;textarea rows="3" class="s-6" placeholder="s-6"&gt;&lt;/textarea&gt;  
+&lt;textarea rows="3" class="s-12" placeholder="s-12"&gt;&lt;/textarea&gt;  
+&lt;input class="s-12 block" type="text" placeholder=".s-12"&gt;             
+</pre>
+
+		<hr>
+
+          <h3>Help text</h3>
+          <p>Block level support for help text that appears around form controls.</p>
+
+          <h4>Block help</h4>
+          <form class="example form-inline">
+            <input type="text">
+            <span class="help">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+          </form>
+<pre class="prettyprint ">
+&lt;input type="text"&gt;&lt;span class="help"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+</pre>
+
+
+          <hr>
+
+
+          <h3>Form control states</h3>
+          <p>Provide feedback to users or visitors with basic feedback states on form controls and labels.</p>
+
+          <h3>Disabled inputs</h3>
+          <p>Add the <i>disabled</i> attribute on an input to prevent user input and trigger a slightly different look.</p>
+          <form class="example form-inline">
+            <input class="s-3" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+          </form>
+<pre class="prettyprint ">
+&lt;input class="s-3" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
+</pre>
+			<hr>
+          <h3>Validation states</h3>
+          <p>Start includes validation styles for error and success messages. To use, add the appropriate class to the surrounding <i>.group</i>.</p>
+
+          <form class="example horizontal">
+            <div class="group error">
+              <label>Input with error</label>
+              <div class="controls">
+                <input type="text">
+                <span class="help">Please correct the error</span>
+              </div>
+            </div>
+
+            <div class="group success">
+              <label>Input with success</label>
+              <div class="controls">
+                <input type="text">
+                <span class="help">Woohoo!</span>
+              </div>
+            </div> 
+          </form>
+<pre class="prettyprint ">
+&lt;div class="group error"&gt;
+  &lt;label&gt;Input with error&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text"&gt;
+    &lt;span class="help"&gt;Please correct the error&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="group success"&gt;
+  &lt;label&gt;Input with success&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;input type="text"&gt;
+    &lt;span class="help"&gt;Woohoo!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Buttons
+        ================================================== -->
+        <section id="buttons">
+          <div class="page-header">
+            <h1>Buttons</h1>
+          </div>
+
+          <h3>Default buttons</h3>
+          <p>Button styles can be applied to anything with the <i>.btn</i> class applied. However, typically you'll want to apply these to only <i>&lt;a&gt;</i> and <i>&lt;button&gt;</i> elements for the best rendering.</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead> 
+            <tbody>
+              <tr>
+                <td><button>Default</button></td>
+                <td><i>btn</i></td>
+                <td>Standard brandcolor button</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <hr>
+
+          <h3>Disabled state</h3>
+          <p>Make buttons look unclickable by fading them back 50%.</p>
+   
+
+          <h3>Button element</h3>
+          <p>Add the <i>disabled</i> attribute to <i>&lt;button&gt;</i> buttons.</p>
+          <p class="example">
+            <button disabled>Button</button>
+          </p>
+<pre class="prettyprint ">
+&lt;button disabled&gt;Button&lt;/button&gt;
+</pre>
+  
+        </section>
+
+
+
+
+        <!-- Loading 
+        ================================================== -->
+        <section id="loading">
+          <div class="page-header">
+            <h1>Loading Status</h1>
+          </div>
+
+          <p>Add the class .loading to any element to show this loading icon. Made with CSS3.</p>
+          <div class="example example-images">
+            <span class="loading"></span>
+            </div> 
+<pre class="prettyprint ">
+&lt;span class="loading"&gt;&lt;/span&gt;
+</pre>
+
+
+        </section>
+
+
+        <!-- Icons
+        ================================================== -->
+        <section id="icons">
+          <div class="page-header">
+            <h1>Icons</h1>
+          </div>
+          
+          <h3>Available Icons as Webfonts</h3>
+          <p>The specific licenses are listed at the character map.</p> 
+          
+          <h4>Entypo</h4>
+<p>150 pictograms. <a href="http://lib.appgestalt.com/startless/webfonts/entypo/index.html" target="_blank">Entypo character map</a>.</p>
+
+<hr>
+
+
+          <h4>Entypo-Social</h4>
+<p>45 social pictograms such as facebook, etc. <a href="http://lib.appgestalt.com/startless/webfonts/entypo-social/index.html" target="_blank">Entypo character map</a>.</p>
+
+<hr>
+
+          <h4>IconSweets1</h4>
+<p>Yummygum designed 60 free icons.
+<a href="http://lib.appgestalt.com/startless/webfonts/iconsweets1/index.html" target="_blank">IconSweets character map</a>.</p>
+
+
+<hr>
+          <h4>Meteocons</h4>
+<p>Meteocons is a set of weather icons, it containing 40+ icons. <a href="http://lib.appgestalt.com/startless/webfonts/Meteocons/index.html" target="_blank">Meteocons character map</a>.</p>
+          
+
+          <hr>
+          
+          <h2>How to use</h2>
+          <h3>Webfonts on server</h3>
+          <p>You have to add the following code to your .htaccess file to import webfonts without any problems.
+<pre class="prettyprint snippet">
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+</pre>
+
+
+          <h3>Select a webfont</h3>
+          <p>Default the webfont <a href="http://lib.appgestalt.com/startless/webfonts/entypo/" target="_blank">Entypo</a> by Daniel Bruce is used. <br/>To change the webfont, please open icons.less and change the following variables. It is recommended to store in these folder the .woff, .ttf and .eot file for the best browser support.</p>
+          
+<pre class="prettyprint snippet">
+// Create Webfonts
+// --------------------------------------------------
+// Set the name of webfont, the font-file should have the same name
+@webfont:	'entypo'; 
+// Path to Webfont, Including .woff, .ttf and .eot files 		
+@iconWebfontPath:'fonts/entypo/fonts/';
+</pre> 
+
+
+ <hr>
+
+
+          <h3>Multiple webfonts</h3>
+                  <p>If you want to include more than one font on a site, you can simply chain a class to it that will apply the appropriate font-family.<br/>
+<pre class="prettyprint snippet">
+[class*="entypo icon-"]:before {
+  font-family: "entypo";  
+}
+</pre>          
+
+ <hr>
+
+          <h3>How to use in html</h3>
+          <p>All icons can be accessed by two ways.
+          You can use <i>data-icon="CHAR"</i> with any kind of tag or <i>&lt;icon&gt;CHAR&lt;/icon&gt;</i>. If you are using more than one webfont-iconset, you should use an unique class and add it to the tag, as well.</p>
+          <div class="example">
+            <span data-icon="&#x23;"></span><br/>
+            <icon>&#x23;</icon> 
+          </div> 
+          <pre class="prettyprint ">
+&lt;span data-icon="&#x23;"&gt;&lt;/span&gt;
+&lt;icon&gt;&#x23;&lt;/icon&gt; 
+</pre>
+          <p>The other option is to add a class, prefixed with <i>icon-</i>, to any kind of tag. See the character maps of the webfonts for the exact class.</p>
+          <div class="example">
+            <span class="icon-iw"></span> 
+          </div>
+<pre class="prettyprint ">
+&lt;span class="icon-iw"&gt;&lt;/span&gt;
+</pre>  
+
+
+          <hr>
+
+
+          <h3>Icon examples</h3>
+          <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
+
+          <h4>Buttons</h4>
+
+          <h5>Button group</h5>
+          <div class="example">
+              <div class="btn-group">
+                <button><span data-icon="&#xe06b;"></span></button> 
+                <button><span data-icon="&#xe06d;"></span></button>
+                <button><span data-icon="&#xe06c;"></span></button>
+                <button><span data-icon="&#xe06e;"></span></button>
+              </div>
+          </div>
+<pre class="prettyprint ">
+  &lt;div class="icon-group"&gt;
+    &lt;button&gt;&lt;span data-icon="&#xe06b;"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button&gt;&lt;span data-icon="&#xe06d;"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button&gt;&lt;span data-icon="&#xe06c;"&gt;&lt;/span&gt;&lt;/button&gt; 
+    &lt;button&gt;&lt;span data-icon="&#xe06e;"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+</pre>
+
+			<hr>
+
+          <h5>Icon group</h5>
+          <div class="example">
+              <div class="icon-group">
+                <span data-icon="&#x49;"></span>
+                <span data-icon="&#x25;"></span>
+                <span data-icon="&#x4b;"></span>
+                <span data-icon="&#x52;"></span>
+              </div>
+          </div>
+<pre class="prettyprint ">
+  &lt;div class="btn-group"&gt;
+    &lt;button&gt;&lt;span data-icon="&#x49;"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button&gt;&lt;span data-icon="&#x25;"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button&gt;&lt;span data-icon="&#x4b;"&gt;&lt;/span&gt;&lt;/button&gt; 
+    &lt;button&gt;&lt;span data-icon="&#x52;"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+</pre>
+
+		<hr>
+
+          <h5>Small button</h5>
+          <div class="example">
+            <button class="btn-small"><span data-icon="&#xe02e;"></span></button>
+          </div>
+<pre class="prettyprint ">
+&lt;a class="btn btn-small" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;button class="btn-small"&gt;&lt;span data-icon="&#xe02e;"&gt;&lt;/span&gt;&lt;/button&gt;
+</pre>
+
+		<hr>
+
+
+          <h4>List</h4>
+          <div class="example">
+            <div class="well" style="padding: 8px 0; margin-bottom: 0;">
+              <ul>
+                <li class="active"><a href="#"><span data-icon="&#x7d;"></span>Home</a></li>
+                <li><a href="#"><span data-icon="&#xe01c;"></span>Friends</a></li>
+                <li><a href="#"><span data-icon="&#x52;"></span>Settings</a></li>
+              </ul> 
+            </div> 
+          </div> 
+<pre class="prettyprint ">
+&lt;ul&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;span data-icon="&#x7d;"&gt;&lt;/span&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span data-icon="&#xe01c;"&gt;&lt;/span&gt;Friends&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;span data-icon="&#x52;"&gt;&lt;/span&gt;Settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+			<hr>
+
+          <h4>Form fields</h4>
+          <form class="example horizontal">
+          <div class="group">
+            <label>Email address</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on" data-icon="&#xe025;"></span>
+                <input type="text">
+               </div>
+            </div>
+          </div>
+          </form>
+<pre class="prettyprint "> 
+&lt;form class="horizontal"&gt;
+&lt;div class="group"&gt;
+  &lt;label&gt;Email address&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;div class="input-prepend"&gt;
+      &lt;span class="add-on" data-icon="&#xe025;"&gt;&lt;/span&gt;
+      &lt;input type="text"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</pre> 
+<hr>
+
+          <form class="example">
+            <label>Search for</label>
+            <div class="input-append">
+              <input type="text" placeholder="Name or email address">
+              <span class="add-on" data-icon="&#x7a;"></span>
+             </div>
+          </form>
+<pre class="prettyprint ">
+&lt;form&gt;
+  &lt;label&gt;Search for&lt;/label&gt;
+  &lt;div class="input-append"&gt;
+    &lt;input type="text" placeholder="Name or email address"&gt;
+    &lt;span class="add-on" data-icon="&#x7a;"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+<hr>
+
+          <form class="example">
+            <label>Log in</label>
+            <div class="input-append">
+              <input type="text" placeholder="Username">
+              <span class="add-on inline" data-icon="&#xe078;"></span>
+             </div>
+          </form>
+<pre class="prettyprint ">
+&lt;form&gt;
+  &lt;label&gt;Log in&lt;/label&gt;
+  &lt;div class="input-append"&gt;
+    &lt;input type="text" placeholder="Username"&gt;
+    &lt;span class="add-on inline" data-icon="&#xe078;"&gt;&lt;/span&gt;
+  &lt;/div&gt; 
+&lt;/form&gt;
+</pre>
+        </section>
+
+
+        <!-- Grid
+        ================================================== -->
+        <section id="grid">
+          <div class="page-header">
+            <h1>Grid</h1>
+          </div>
+          
+          <h3>Fluid grid with %</h3>
+          <p>The default startless grid system consists of 12 columns. The classes always starts with an <i>s-</i> for size followed by a number. The grid system can also be used for <a href="#forms">form elements</a>, such as input, textarea and selects.
+          </p> 
+
+          <div class="grid showgrid">  
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+          </div>
+          
+          <div class="grid showgrid">  
+            <div class="s-2">s-2</div>
+            <div class="s-2">s-2</div>
+            <div class="s-2">s-2</div>
+            <div class="s-2">s-2</div>
+            <div class="s-4">s-4</div>
+          </div>        
+
+          <div class="grid showgrid">  
+            <div class="s-6">s-6</div>
+            <div class="s-6">s-6</div>
+          </div>           
+ 
+          <div class="grid showgrid">  
+            <div class="s-4">s-4</div>
+            <div class="s-8">s-8</div>
+          </div>  
+   
+      <div class="grid showgrid">  
+            <div class="s-1">s-1</div>
+            <div class="s-11">s-11</div>
+          </div>  
+               
+                
+                                                      
+          <h3>Use the grid system</h3>
+          <p>The container class should have the class <i>.grid</i>. </p> 
+<pre class="prettyprint snippet">
+&lt;div class="grid"&gt;
+  &lt;div class="s-4"&gt;...&lt;/div&gt;
+  &lt;div class="s-8"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        </section>
+
+
+        <!-- Layout
+        ================================================== -->
+        <section id="layout">
+          <div class="page-header">
+            <h1>Layout</h1>
+          </div>
+         
+          <h3>Responsive Layout</h3>
+          <p>As the default, the layout adapts itself to the screensize and the following items: 
+          header, nav section, section, article, footer section, .container get a specific width.
+          However, if you want to use the full width, just use the class <i>.full-width</i>.</p> 
+<pre class="prettyprint snippet">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body>
+  &lt;nav&gt;...&lt;/nav&gt;
+  &lt;article&gt;...&lt;/article&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<hr>
+
+            
+          <h3>Centered Layout</h3>
+          <p>Due to the automatic width of all important elements, the whole site can easily be centered by using the class <i>.center</i>. The class can also combined with the grid system.</p> 
+<pre class="prettyprint snippet">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body>
+  &lt;article class="center"&gt;...&lt;/article&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+          <p>The navbar and footer should be include an element which has the class <i>.center</i> so the whole footer and navbar can use the whole width and only the content is centered.</p> 
+<pre class="prettyprint snippet">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body>
+  &lt;nav&gt;
+    &lt;section class="center"&gt;...&lt;/section&gt;
+  &lt;/nav&gt;
+  &lt;article class="center"&gt;...&lt;/article&gt;
+  &lt;footer&gt;
+    &lt;section class="center"&gt;...&lt;/section&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>  
+
+
+<hr>
+
+
+      <h2>Navbar</h2>
+            
+          <h3>Navbar Position</h3>
+          <p>Use the class <i>.top</i> or <i>.bottom</i> to position the nav on a fixed position.</p> 
+<pre class="prettyprint snippet">
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;nav class="top"&gt;...&lt;/nav&gt;
+&lt;nav class="bottom"&gt;...&lt;/nav&gt;
+</pre>
+<hr>
+
+          <h3>Navbar Centered</h3>
+          <p>Use the class .center to center the navigation.</p> 
+<pre class="prettyprint snippet">
+&lt;nav class="top"&gt;
+  &lt;section class="center"&gt;...&lt;/section&gt;
+&lt;/nav&gt;
+</pre>
+<hr>
+          <h3>Navbar Items</h3>
+          <p>The .brand class can be used for a logo. Navigation items should be wrapped in list elements.</p> 
+<pre class="prettyprint snippet">
+&lt;nav&gt;
+  &lt;a class="brand" href="#intro"&gt;start.less&lt;/a&gt;
+  &lt;a href="#typography"&gt;Typography&lt;/a&gt;
+  &lt;a href="#lists"&gt;Lists&lt;/a&gt;
+  &lt;a href="#tables"&gt;Tables&lt;/a&gt;
+&lt;/nav&gt;
+</pre>
+<hr>
+
+          <h3>Responsive Navbar</h3>
+          <p>The navbar can also be collaped for mobile devices.
+          For targeting the collapsed items the new CSS3 pseudo selector <i>:target</i> is used.
+          This is still work-in-progress and the common js/jquery solution could also be used.
+          The following navbar code is also used on this site.</p> 
+<pre class="prettyprint snippet">
+&lt;nav class="top"&gt;
+  &lt;section class="center"&gt;
+    &lt;a class="collapse" href="#collapse">
+      &lt;span&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;/span&gt;  
+    &lt;/a&gt;
+    &lt;a class="brand" href="#intro"&gt;start.less&lt;/a&gt;
+    &lt;div id="collapse"&gt;
+      &lt;a href="#typography"&gt;Typography&lt;/a&gt;
+      &lt;a href="#lists"&gt;Lists&lt;/a&gt;
+      &lt;a href="#tables"&gt;Tables&lt;/a&gt;
+    &lt;/div&gt;
+ &lt;/section&gt;
+&lt;/nav&gt;
+</pre>
+
+
+        </section>
+
+
+        <!-- App Icon & Startpage
+        ================================================== -->
+        <section id="webapp">
+          <div class="page-header">
+            <h1>Web App</h1>
+            <p>App icons and a startup image in different sizes for all kind of devices create an authentically app experience.
+          </p> 
+          </div>
+
+
+          <h3>Meta Tags</h3>
+          <p>The following meta tags create a non-zoomable web app.</p>
+<pre class="prettyprint snippet">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;
+&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+&lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;
+</pre>
+<hr>
+
+          <h3>App Icon</h3>
+          <p>The following specific formats are for apple devices only. There are several apps to quick and easy generate assets for your iOS app, e.g. free <a href="https://itunes.apple.com/de/app/iconify/id416289784?mt=12">iConify</a>.</p>
+           
+<pre class="prettyprint snippet">
+&lt;!-- Fav icon --&gt;
+&lt;link rel="shortcut icon" href="/img/ico/favicon.ico"&gt;
+&lt;!-- Standard iPhone --&gt; 
+&lt;link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/ico/Icon.png" /&gt;
+&lt;!-- Retina iPhone --&gt; 
+&lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/ico/Icon@2x.png" /&gt;
+&lt;!-- Standard iPad --&gt; 
+&lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/ico/Icon-72.png" /&gt;
+&lt;!-- Retina iPad --&gt; 
+&lt;link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/ico/Icon-72@2x.png" /&gt;
+</pre>
+
+<hr>
+
+          <h3>Startup Image</h3>
+          <p>The following specific formats are for apple devices only.</p>
+
+<pre class="prettyprint snippet">
+&lt;!-- iPhone (portrait) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-320x460.png"
+      media="(device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPhone (landscape) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-460x320.png"
+      media="(device-width: 480px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPhone (Retina, portrait) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-640x920.png"
+      media="(device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" 
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPhone (Retina, landscape) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-920x640.png"
+      media="(device-width: 480px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPhone 5 (portrait) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-640x1096.png"
+      media="(device-width: 320px) and (device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPhone 5 (landscape) SPLASHSCREEN --&gt; 
+&lt;link href="/img/ico/apple-touch-startup-image-1096x640.png"
+      media="(device-width: 568px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"&gt;
+
+&lt;!-- iPad (portrait) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-768x1004.png"
+      media="(device-width: 768px) and (orientation: portrait)"
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPad (landscape) SPLASHSCREEN --&gt; 
+&lt;link href="/img/ico/apple-touch-startup-image-748x1024.png"
+      media="(device-width: 768px) and (orientation: landscape)"
+      rel="apple-touch-startup-image"&gt;
+&lt;!-- iPad (Retina, portrait) SPLASHSCREEN --&gt;
+&lt;link href="/img/ico/apple-touch-startup-image-1536x2008.png"
+      media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+      rel="/img/ico/apple-touch-startup-image"&gt;
+&lt;!-- iPad (Retina, landscape) SPLASHSCREEN --&gt;
+&lt;link href="apple-touch-startup-image-1496x2048.png"
+      media="(device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"&gt;
+</pre>          
+  
+
+	</section>
+
+
+
+  </article>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <section class="center">
+        <p class="right"><a href="#">Back to top</a></p>
+        <p>Designed by <a href="http://ahoi.in" target="_blank">@ahoiin</a> from <a href="http://www.appgestalt.com" target="_blank">appgestalt.com</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Inspired by the superb <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, built at Twitter by @mdo and @fat.</p>
+        <ul>
+          <li><a href="http://www.appgestalt.com">App Gestalt</a></li>
+        </ul>
+      </section>
+    </footer>
+
+
+
+
+  </body>
+</html>-
