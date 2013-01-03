@@ -1,44 +1,47 @@
-# start.less 0.1
+# start.less v0.1
 
-Startless is a lightweight (14kb) style library for web apps.
+Start.less is a lightweight (14kb) style library for web apps.
 It is perfect to start with a webapp or just create a fast app-prototype.
-Startless is based on a responsive layout, you can use several offered webfonts for your icons and customize your app easily with the included .less files.
-Startless is created and maintained by [Sebastian Ahoi](https://twitter.com/ahoiin) from [App Gestalt](http://www.appgestalt.com).
+Start.less is based on a responsive layout, you can use several offered webfonts for your icons and customize your app easily with the included .less files.
+Start.less is created and maintained by [Sebastian Sadowski](https://twitter.com/ahoiin) from [AppGestalt](http://www.appgestalt.com).
 
-To get started, checkout [ttp://libs.appgestalt.com/startless/](http://lib.appgestalt.com/startless/).
+To get started, check out [libs.appgestalt.com/startless/](http://libs.appgestalt.com/startless/).
+
 
 
 
 Twitter account
 ---------------
-Keep up to date on announcements and more by following startless from App Gestlat on Twitter, [@AppGestalt](https://twitter.com/AppGestalt).
+Keep up to date on announcements and more by following start.less from AppGestalt on Twitter, [@AppGestalt](https://twitter.com/AppGestalt).
 
 
+ 
 
 To DO
 ----------
 Include further open source webfonts 
 in the same style with the tool http://icomoon.io/app/:
-http://adamwhitcroft.com/batch/
-http://somerandomdude.com/work/iconic/
-http://www.tenbytwenty.com/sosa.php
-http://www.zurb.com/playground/foundation-icons
++ http://adamwhitcroft.com/batch/
++ http://somerandomdude.com/work/iconic/
++ http://www.tenbytwenty.com/sosa.php
++ http://www.zurb.com/playground/foundation-icons
 
 
 
-Authors
+
+Author
 -------
-**Sebastian Ahoi**
-
+**Sebastian Sadowski**
 + http://twitter.com/ahoiin
 + http://ahoi.in
+
 
 
 
 Copyright and license
 ---------------------
 
-Copyright 2013 App Gestalter UG (haftungsbeschränkt)
+Copyright 2013 App Gestalt UG (haftungsbeschränkt)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
