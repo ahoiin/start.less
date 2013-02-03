@@ -1,0 +1,226 @@
+<h1>Layout</h1>
+
+       
+          <h3>Grid</h3>
+          
+          <h5>Fluid grid with %</h5>
+          <p>The default startless grid system consists of 12 columns. The classes always starts with an <i>s-</i> for size followed by a number. The grid system can also be used for form elements, such as input, textarea and selects.
+          </p> 
+
+          <div class="grid showgrid">  
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+            <div class="s-1">s-1</div>
+          </div>
+          
+          <div class="grid showgrid">  
+            <div class="s-2">s-2</div>
+            <div class="s-2">s-2</div>
+            <div class="s-2">s-2</div>
+            <div class="s-2">s-2</div>
+            <div class="s-4">s-4</div>
+          </div>        
+
+          <div class="grid showgrid">  
+            <div class="s-6">s-6</div>
+            <div class="s-6">s-6</div>
+          </div>           
+ 
+          <div class="grid showgrid">  
+            <div class="s-4">s-4</div>
+            <div class="s-8">s-8</div>
+          </div>  
+   
+      <div class="grid showgrid">  
+            <div class="s-1">s-1</div>
+            <div class="s-11">s-11</div>
+          </div>  
+               
+                
+                                                      
+          <h5>Use the grid system</h5>
+          <p>The container class should have the class <i>.grid</i>. </p> 
+<pre code="html">
+<div class="grid">
+  <div class="s-4">...</div>
+  <div class="s-8">...</div>
+</div>
+</pre>
+
+ 
+  <hr> 
+
+          
+         
+          <h3>Responsive Layout</h3>
+          <p>As the default, the layout adapts itself to the screensize and the following items: 
+          header, nav section, section, article, footer section, .container get a specific width.
+          However, if you want to use the full width, just use the class <i>.full-width</i>.</p> 
+<pre code="html">
+<nav>...</nav>
+<article>...</article>
+<footer>...</footer>
+</pre>
+
+<hr>
+
+            
+          <h3>Centered Layout</h3>
+          <p>Due to the automatic width of all important elements, the whole site can easily be centered by using the class <i>.center</i>. The class can also combined with the grid system.</p> 
+<pre code="html">
+<article class="center">...</article>
+</pre>
+
+          <p>The navbar and footer should be include an element which has the class <i>.center</i> so the whole footer and navbar can use the whole width and only the content is centered.</p> 
+<pre code="html">
+  <nav>
+    <section class="center">...</section>
+  </nav>
+  <article class="center">...</article>
+  <footer>
+    <section class="center">...</section>
+  </footer>
+</pre> 
+
+
+<hr>
+
+      <h3>Navigation</h3>
+            
+          <p>Use the class <i>.top</i> or <i>.bottom</i> to position the nav on a fixed position.</p> 
+<pre code="html">
+<nav>...</nav>
+<nav class="top">...</nav>
+<nav class="bottom">...</nav>
+</pre>
+
+          <p>Use the class .center to center the navigation.</p> 
+<pre code="html">
+<nav class="top">
+  <section class="center">...</section>
+</nav>
+</pre>
+          <p>The .brand class can be used for a logo. Navigation items should be wrapped in list elements.</p> 
+<pre code="html">
+<nav>
+  <a class="brand" href="#intro">start.less</a>
+  <a href="#typography">Typography</a>
+  <a href="#lists">Lists</a>
+  <a href="#tables">Tables</a>
+</nav>
+</pre>
+
+          
+        <p>The navbar can also be collaped for mobile devices.
+          For targeting the collapsed items the new CSS3 pseudo selector <i>:target</i> is used.
+          This is still work-in-progress and the common js/jquery solution could also be used.
+          The following navbar code is also used on this site.</p> 
+<pre code="html">
+<nav class="top">
+  <section class="center">
+    <a class="collapse" href="#collapse">
+      <span></span>
+      <span></span>
+      <span></span>  
+    </a>
+    <a class="brand" href="#intro">start.less</a>
+    <div id="collapse">
+      <a href="#typography">Typography</a>
+      <a href="#lists">Lists</a>
+      <a href="#tables">Tables</a>
+    </div>
+ </section>
+</nav>
+</pre>
+
+
+
+
+
+
+<!--
+          <h3>Alignment</h3>
+          <p>Use <i>.right</i> or <i>.left</i> for a floated, right-aligned or left-aligned div.</p>
+          <div class="example">
+            <div class="right">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+<div class="right">...</div>
+</pre>
+
+          <div class="example">
+            <div class="left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+<div class="left">...</div>
+</pre>
+
+<hr>
+
+
+          <p>Use <i>.center</i> to center any content. The centered item needs a width. We just use the <a  href="#grid">grid</a>.</p>
+          <div class="example">
+            <div class="center s-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+<div class="center s-3">...</div>
+</pre>
+
+<hr>
+
+          <p>Use <i>.hidden</i> to hide an object</p>
+          <div class="example">
+            <span class="hidden">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+          </div>
+<pre class="prettyprint ">
+<span class="hidden">...</span>
+</pre>
+
+<hr>
+
+          <p>Use <i>.block</i> to display an item as block-level element.</p>
+          <div class="example">
+            <div class="block">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="block">
+              Integer posuere erat a ante.
+            </div>
+          </div>
+<pre class="prettyprint ">
+<div class="block">...</div> 
+</pre>
+
+<hr>
+
+          <p>Use <i>.inline</i> to display an item as inline element. It behaves also as a block element.</p>
+          <div class="example">
+            <div class="inline s-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Nulla volutpat aliquam velit.
+            </div>
+            <div class="inline s-6">
+              Integer posuere erat a ante. Aenean sit amet erat nunc. Vestibulum laoreet porttitor sem. Facilisis in pretium nisl aliquet.
+            </div>
+          </div>
+<pre class="prettyprint ">
+<div class="inline s-6">...</div>
+<div class="inline s-6">...</div>
+</pre>
+-->

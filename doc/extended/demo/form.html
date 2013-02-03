@@ -1,0 +1,171 @@
+<h1>Forms</h1>
+<p>
+Individual form controls receive styling, but without any required base class on the <i>&lt;form&gt;</i> or large changes in markup.<br>
+</p>
+
+<section>
+
+
+
+
+
+
+<h3>Buttons</h3>
+
+<div class='example'>
+<button class="upload">
+<span>Upload</span>
+<input type='file' class="no6" /> 
+</button>  
+</div>
+<pre code="html">
+<button class="upload">
+  <span>Upload</span>
+  <input type='file' /> 
+</button>  
+</pre>
+
+       
+              <hr>       
+
+          <h3>Help Text</h3>           
+ 
+<div class='example'>
+<input type="text" placeholder="...">
+<span class="help">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+</div>
+<pre code="html">
+<input type="text" placeholder="...">
+<span class="help">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+</pre>
+
+</section>
+<section>
+
+		<h2>Extending form controls</h2>
+
+          <h3>Prepend/Append Buttons</h3>
+          <p>Just add the class <i>.append</i> or <i>.prepend</i> to a button to dock it to the next input field.
+<div class='example'>
+<form>
+  <input type="text" placeholder="...">
+  <button type="submit" class="append" icon="&#xe059;"></button> 
+</form>
+<form>
+  <button type="submit" class="prepend">Location</button>
+  <input type="text" placeholder="...">
+</form></div>
+<pre code="html">
+<form>
+  <input type="text" placeholder="...">
+  <button type="submit" class="append" icon="&#xe059;"></button> 
+</form>
+<form>
+  <button type="submit" class="prepend">Location</button>
+  <input type="text" placeholder="...">
+</form>
+</pre>
+
+		<hr>
+        <div class="example">
+          <form >
+            <label>Email address</label>
+             <i icon="&#xe083;" class="prepend"></i>
+             <input type="text" placeholder="...">  
+          </form>
+          </div>
+<pre code="html">
+<form >
+  <label>Email address</label>
+  <i icon="&#xe083;" class="prepend"></i>
+  <input type="text" placeholder="...">  
+</form>
+</pre>
+
+
+		<hr>
+        <div class="example">
+          <form >
+            <label>Server</label>
+            <span class="prepend">ftp://</span>
+            <input type="text" placeholder="...">  
+          </form>
+          </div>
+<pre code="html">
+<form >
+  <label>Server</label>
+  <span class="prepend">ftp://</span>
+  <input type="text" placeholder="...">  
+</form>
+</pre>
+
+
+<hr>
+         
+        <div class="example">
+          <form>
+            <label>Log in</label>
+              <input type="text" placeholder="Username">
+              <button class="append" icon="&#xe0da;"></button>
+          </form>
+          </div>
+<pre code="html">
+<form>
+  <label>Log in</label>
+  <input type="text" placeholder="Username">
+  <button class="append" icon="&#xe0da;"></button>
+</form>
+</pre>          
+
+    
+ <!-- styling not currently supported by all browsers
+<div class='example'>
+<input type='range'/>
+</div>
+<pre code="html">
+<input type="range"/>
+</pre>
+
+<div class='example'>
+<progress value="22" max="100"></progress>
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+</div>
+<pre code="html">
+<progress value="22" max="100"></progress>
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+</pre>
+-->
+
+
+
+<!--
+<div class='example'>
+<input type='month'/>
+</div>
+<pre code="html">
+&lt;input type="month"/>
+</pre>
+-->
+<!--
+<div class='example'>
+<input list="browsers" placeholder="datalist">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+</div>
+<pre code="html">
+<input list="browsers" placeholder="datalist">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+</pre>
+</section>
+-->

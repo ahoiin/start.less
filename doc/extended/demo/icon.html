@@ -1,0 +1,123 @@
+<h1>Icons</h1>
+<h4>Available Icons as Webfonts</h4>
+<p>The specific licenses are listed at the character map. <br>To include the icons use the attribute <i>icon</i> e.g. &lt;i icon="UNICODE"&gt;&lt;/i&gt;  </p>
+     
+ <!--
+<section>
+    <h3>Unicode</h3>
+    <p>
+    Unicode Icons are automatically available. No need to include external WebFonts.<br/>
+    We show you a curated set here, that should work everywhere.
+    </p>
+    <div>
+        <style>
+        [unicode]{font-size:48px;}
+        [unicode]:before{content: "&#x" attr(unicode) ";";}
+        [unicode]:before{content: attr(unicode);}
+        </style>
+        <span unicode='&#x2714;'></i>
+        <span unicode='&#x2716;'></i>
+        <span unicode='&#x25cf;'></i>
+        <span unicode='&#x2600;'></i>
+        <span unicode='&#x2601;'></i>
+        <span unicode='&#x2602;'></i>
+        <span unicode='&#x2605;'></i>
+        <span unicode='&#x2606;'></i>
+        <span unicode='&#x2639;'></i>
+        <span unicode='&#x263a;'></i>
+        <span unicode='&#x2691;'></i>
+        <span unicode='&#x2692;'></i>
+        <span unicode='&#x2665;'></i>
+        <span unicode='&#x2669;'></i>
+        <span unicode='&#x266b;'></i>
+        <span unicode='&#x260f;'></i>
+        <span unicode=''>&rarr;</i>
+        <span unicode=''>&larr;</i>
+        
+    </div>
+</section>
+-->
+
+
+<hr>
+
+    <h3>Entypo</h3> 
+    <p>
+    The Entypo Icons are a great free icon-set.<br/>
+    280 pictograms. <a href="http://lib.appgestalt.com/startless/webfonts/entypo/index.html" target="_blank">» Entypo character map</a>
+    </p> 
+    <div>
+        <i icon="&#xe000;" title='21' ></i>
+        <i icon='&#xe03a;' title='21' ></i>
+        <i icon='&#xe085;' title='21' ></i>
+        <i icon='&#xe0bf;' title='21' ></i>
+    </div>
+  
+
+<hr>
+
+    <h3>Batch</h3> 
+    <p>
+    The Batch Icons are mostly round.<br/>  
+    345 pictograms. <a href="http://lib.appgestalt.com/startless/webfonts/batch/index.html" target="_blank">» Batch character map</a>
+    </p> 
+    <div>  
+        <i icon="&#xe000;" title='21' class="batch"></i> 
+        <i icon='&#xe03a;' title='21' class="batch"></i>
+        <i icon='&#xe085;' title='21' class="batch"></i>
+        <i icon='&#xe0bf;' title='21' class="batch"></i>
+    </div>
+  
+           
+
+
+<section>
+          <h2>How to use</h2>
+          <h3>Webfonts on server</h3>
+          <p>You have to add the following code to your .htaccess file to import webfonts without any problems.
+<pre code="php">
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+</pre>
+<hr>
+
+          <h3>Select a webfont</h3>
+          <p>As default the webfont <a href="http://lib.appgestalt.com/startless/webfonts/entypo/" target="_blank">Entypo</a> by Daniel Bruce is used. <br/>To change the webfont, please open icons.less and change the following variables. It is recommended to store in these folder the .woff, .ttf and .eot file for the best browser support.</p>
+          
+<pre code="php">
+// Create Webfonts
+// --------------------------------------------------
+// Set the name of webfont, the font-file should have the same name
+@webfont:	'entypo'; 
+// Path to Webfont, Including .woff, .ttf and .eot files 		
+@iconWebfontPath:'fonts/entypo/fonts/';
+</pre> 
+
+
+ <hr>
+ 
+
+          <h3>Multiple webfonts</h3>
+                  <p>If you want to include more than one font on a site, you can simply chain a class to it that will apply the appropriate font-family.<br/>
+<pre code="html">
+[class^="entypo"][icon]:before, [class*=" entypo"][icon]:before {
+  font-family: "entypo"; 
+} 
+<i icon='&#xe0bf;'></i>
+<i class="batch" icon='&#xe0bf;'></i>
+</pre>          
+
+ <hr>
+
+          <h3>How to use in html</h3>
+          <p>You can use <i>icon="UNICODE"</i> version with any kind of tag. If you are using more than one webfont-iconset, you should use an unique class and add it to the tag, as well.</p>
+          <div class="example">
+            <i icon="&#xe0bf;"></i><br/>
+          </div> 
+          <pre class="prettyprint ">
+&lt;i icon="&#xe0bf;"&gt;&lt;/i&gt;
+</pre>
+
+</section>

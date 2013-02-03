@@ -1,0 +1,38 @@
+// Variables for startless lib: extended
+// --------------------------------------------------
+
+// LISTS
+// --------------------------------------------------
+@listBulletColor: 			@gray;
+@listBackgroundAccent:		@grayLightest; // for striping
+ 
+   
+// Tables
+// --------------------------------------------------
+@tableBackgroundAccent:		@grayLightest; // for striping
+
+
+// Navbar --------------------
+@navLinkColorActive:		@white;
+@navBrandFontSize: 			@baseFontSize + 3px;
+
+
+// WEBFONT ICONS
+// --------------------------------------------------
+@iconSize:					@baseFontSize + 5px; 
+@iconHover:					@brandColor;
+@iconActive:				darken(@brandColor, 10%);
+
+
+// OTHER
+// --------------------------------------------------
+// GRID, fluid, default 940px grid
+// --------------------------------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
+@fluidGridGutterWidth:    percentage(@gridGutterWidth/@gridRowWidth);   
+ 

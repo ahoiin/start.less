@@ -1,0 +1,65 @@
+
+<h1>Mixins for LESS Designers</h1>
+ 
+<section>
+    <p>Color for the placeholder text. For input elements.</p>
+<pre code="css">
+.placeholder(@color);
+</pre>
+</section>
+
+<section>
+    <p>Create a new webfont. Requires the name of the webfont and url to the .eot, .woff and .ttf files.<br>
+    Note: the mixin must be in the font-face tag. 
+    </p>
+<pre code="css">
+@font-face { .createFontFace(@fontName, @fontPath); } 
+</pre>
+</section>
+
+<section>
+    <p>Round Corners.</p>
+<pre code="css">
+.borderRadius(@radius); //e.g. 2px
+</pre>
+</section> 
+
+
+<section>
+    <p>Opacitiy in full per cent</p>
+<pre code="css">
+.opacity(@opacity); //e.g. 50
+</pre>
+</section>
+
+<section>
+    <p>Placement. @type could be absolute, relative etc.</p>
+<pre code="css">
+.placement(@type, @top, @right, @bottom, @left);
+</pre>
+</section>
+
+<section>
+<p>Clipping currently supports only rect and only works with position: absolute; So just enter the values for the rect.<br>
+Note: Both the top and the bottom values define the offset from the top border and the left and right values define the offset from the left border.</p>
+<pre code="css">
+.clip(@top, @right, @bottom, @left);
+</pre>
+</section>
+
+<section>
+    <p>CSS3 Transitions</p>
+<pre code="css">
+.transition(@transition); //e.g. all 0.3s ease-out
+.rotate (@degrees); //e.g. 90deg
+.translate(@x, @y); //e.g. 100px, 100px
+</pre> 
+</section>
+
+<section>
+    <p>CSS3 Animation</p>
+<pre code="css">
+.animation(@val) //e.g. spin .6s infinite linear 
+.keyframeAnimation (@name, @from, @to); //e.g. spin, transform:rotate(0deg), transform:rotate(360deg)
+</pre>
+</section>

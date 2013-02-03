@@ -1,0 +1,49 @@
+//
+// Optimization for diverent screen resolutions
+// --------------------------------------------------
+
+
+/* Large screens ----------- */
+@media (min-width: 1824px) {
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1281px) {
+   header, nav section, section, article, footer section { width: 1170px; }
+}
+
+
+/* Android Tablets (portrait and landscape)
+-----------------------------------------------------------------------*/
+@media (min-width : 800px) and (max-width : 1280px) {
+   header, nav section, section, article, footer section { width: 1023px; }
+}
+ 
+
+/* iPads (portrait and landscape) ----------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header, nav section, section, article, footer section { width: 724px; }
+}
+ 
+ 
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width: 767px) {
+	header, nav section, section, article, footer section { width: auto; }
+}
+ 
+
+@media print {
+    * {
+        background: none !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    } 
+    a { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    a[href="#"], a[href="javascript:"] { content: ""; }
+}
+
+

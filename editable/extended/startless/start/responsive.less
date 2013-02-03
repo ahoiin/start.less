@@ -1,0 +1,49 @@
+//
+// Optimization for diverent screen resolutions
+// --------------------------------------------------
+
+
+/* Large screens ----------- */
+@media (min-width: 1824px) {
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1281px) {
+
+}
+
+
+/* Android Tablets (portrait and landscape)
+-----------------------------------------------------------------------*/
+@media (min-width : 800px) and (max-width : 1280px) {
+
+}
+ 
+
+/* iPads (portrait and landscape) ----------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+  
+ 
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width: 767px) {
+	nav.top, nav.bottom { margin-right: -20px; margin-left: -20px; }
+	
+    // Collapsible Navbar
+	nav .collapse { display: block; } 
+	#collapse { display: none; }
+    
+	// Grid 
+ 	// Make all grid-sized elements block level again 
+    [class*="s-"] {
+      float: none !important;  
+      display: block !important; 
+      width: 100% !important; 
+      margin-left: 0 !important; 
+    } 
+
+}
+

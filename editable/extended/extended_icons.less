@@ -1,0 +1,21 @@
+// ICONS
+// -----
+
+// Create Webfonts
+// --------------------------------------------------
+@fontName1: 'entypo'; //set name of webfont, the font-file should have the same name
+@fontName2: 'batch';  //set name of webfont, the font-file should have the same name
+@fontPath1: 'http://ll1.cc/fonts/entypo/fonts/';
+@fontPath2: 'http://ll1.cc/fonts/batch/fonts/';   
+@font-face { .createFontFace(@fontName1, @fontPath1); }  //create a new webfont  
+@font-face { .createFontFace(@fontName2, @fontPath2); }  //create a new webfont  
+
+ 
+// Define standard iconset and add specific class for webfont
+[class^="entypo"][icon]:before, [class*=" entypo"][icon]:before, [icon]:before   {
+	font-family: @fontName1;
+} 
+
+[class^="batch"][icon]:before, [class*=" batch"][icon]:before {
+	font-family: @fontName2;
+}

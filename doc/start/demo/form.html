@@ -1,0 +1,152 @@
+<h1>Forms</h1>
+<p>
+Individual form controls receive styling, but without any required base class on the <i>&lt;form&gt;</i> or large changes in markup.<br>
+</p>
+
+<section>
+
+
+<h3>Keyboard Input</h3>
+<p>You can use <i>disabled</i> and <i>readonly</i> with all form elements.
+</p>
+<div class='example'>
+<input placeholder="Short Text"/>
+<textarea placeholder="A Longer Text Here..."></textarea>
+</div>
+<pre code="html">
+<input />
+<textarea></textarea>
+</pre>
+
+<div class='example'>
+<input type='password' placeholder="Password"/>
+</div>
+<pre code="html">
+<input type="password"/>
+</pre>
+
+<div class='example'>
+<input type='email' placeholder="E-Mail"/>
+<input type='tel' placeholder="Phone-Number"/>
+<input type='url' placeholder="URL"/>
+</div>
+<pre code="html">
+<input type="email"/>
+<input type="tel"/>
+<input type="url"/>
+</pre>
+
+  
+<div class='example'>
+<input type='date' placeholder="Date"/>
+<input type='time' value="12:00:00"/>
+</div>
+<pre code="html">
+<input type="date"/>
+<input type="time"/>
+</pre>
+
+<div class='example'>
+<input type='number' placeholder="Number"/>
+</div>
+<pre code="html">
+<input type="number"/>
+</pre>
+
+
+<hr>
+
+
+
+<h3>Mouse Input</h3>
+<p>You can use <i>disabled</i> and <i>readonly</i> with all form elements.
+
+
+<div class='example'>
+<input type="radio" name="sex" value="male" class="no6">Male<br>
+<input type="radio" name="sex" value="female" class="no6">Female
+</div>
+<pre code="html">
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</pre>
+ 
+<div class='example'>
+<input type="checkbox" name="vehicle" value="Bike" class="no6">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car" class="no6">I have a car 
+</div>
+<pre code="html">
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car 
+</pre>
+
+<div class='example'>
+<input type='color' placeholder="Color"/>
+</div>
+<pre code="html">
+<input type="color"/>
+</pre>
+
+
+<hr> 
+
+<h3>Buttons</h3>
+
+
+<div class='example'>
+	<button>Button</button>
+    <button disabled>Button</button>
+</div>
+<pre code="html">
+<button>Button</button>
+<button disabled>Button</button> 
+</pre>
+
+       
+              <hr>       
+
+          <h3>Form Fields</h3>           
+<div class='example'>
+<form>
+  <input type="text" placeholder="...">
+  <button type="submit">Search</button>
+</form></div>
+<pre code="html">
+<form>
+  <input type="text" placeholder="...">
+  <button type="submit">Search</button>
+</form>
+</pre>
+
+<hr>
+ 
+
+</section> 
+<section>
+
+             
+    <h3>Labeling</h3>         
+    <p>
+    check the example below to see how <i>fieldsets</i> and <i>labels</i> are formatted.
+    </p>
+    <div class='example'>
+        <fieldset>
+            <legend>Personalia</legend>
+            <label>Name</label> <!-- TOP -->
+            <input type="text" placeholder="Type some text...">
+            <label>Birthday <input type="date"> </label> <!-- LEFT -->
+        </fieldset>
+    </div>
+    <pre code="html">
+<fieldset>
+  <legend>Personalia</legend>
+  <label>Name</label> <!-- TOP -->
+  <input type="text">
+  <label>Birthday <input type="date"> </label> <!-- LEFT -->
+</fieldset>
+    </pre>  
+    
+</section>
+ 
+    
+ 

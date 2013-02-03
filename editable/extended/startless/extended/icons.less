@@ -1,0 +1,22 @@
+// ICONS
+// -----
+
+i[icon] { font-style: normal; }
+ 
+[icon]:before   {
+	content: attr(icon);
+	speak: none;
+	font-weight: normal; 
+	line-height: 1;
+    font-size: @iconSize;
+	-webkit-font-smoothing: antialiased;
+} 
+
+[icon]:before {  
+	&:hover, &:active { cursor: pointer;  } 
+	&:hover:before    { color: @iconHover;  }
+    &:active:before   { color: @iconActive; }
+    padding:0px;
+} 
+
+

@@ -1,0 +1,305 @@
+//
+// GENERALL STYLE
+// --------------------------------------------------
+
+// CSS Reset
+// --------------------------------------------------
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, fieldset, form, label, pre { 
+    margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; background: transparent;  
+}
+:focus, a:focus, a:hover, a:active  { outline: 0; }
+ul, ol { list-style: none; }
+ 
+// Touch and Screen Optimization
+// --------------------------------------------------
+* { 
+    -webkit-touch-callout: none; 
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    //text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+*, *:before, *:after { // width is always 100% including padding and border
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// Basic Style 
+// --------------------------------------------------
+html, body { 
+    background-color: @bodyBackground; 
+    color: @textColor;  
+    font-family: @baseFontFamily;  
+    font-size: @baseFontSize;  
+    line-height: @baseLineHeight;
+    font-weight: normal; 
+} 
+a { color: @linkColor; text-decoration: none; }
+a:hover { color: @linkColorHover; cursor: pointer; }
+img { max-width: 100%; width: auto\9; height: auto; border: 0; }
+hr { border: 0; border-top: 1px solid @grayLighter;  margin: 20px 0px; } 
+p { margin: 0px 0px @baseLineHeight / 2;}
+
+
+//
+// TYPOGRAPHY
+// --------------------------------------------------
+// Headings
+// --------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  margin: (@baseLineHeight / 2) 0;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
+  font-style: @headingsFontStyle;
+  line-height: @baseLineHeight;
+  color: @headingsColor;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+} 
+h1, h2, h3 { line-height: @baseLineHeight * 2; }
+h1 { font-size: @baseFontSize * 2.75; } // ~38px
+h2 { font-size: @baseFontSize * 2.25; } // ~32px
+h3 { font-size: @baseFontSize * 1.75; } // ~24px
+h4 { font-size: @baseFontSize * 1.25; } // ~18px
+h5 { font-size: @baseFontSize; }
+h6 { font-size: @baseFontSize * 0.85; } // ~12px
+
+
+   
+//
+// LISTS
+// --------------------------------------------------
+li {
+	border-bottom: 1px solid @listBorderColor; 
+	&:last-child { border: 0; }  
+}
+// -------
+// Ordered Lists
+ol{ counter-reset:li; margin-left:0; padding-left:0; }
+ol > li { position:relative; padding: 9px 0px 9px 25px; }
+ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    position:absolute; top: 9px; left: 8px;
+} 
+// -------
+// Unordered Lists
+ul li {
+    padding: 9px 10px; 
+    &:before, &:after { content:""; display:table; clear: both; }
+	/*&.active { background-color: @brandColor; > * { color: white; } }*/  
+  img {  padding: 0px 12px 0px 0px; width: 60px; height: auto; float: left; }
+  h4  { margin: 8px 0px 5px; } 
+  > a { font-size: @baseFontSize + 1px; line-height: @baseLineHeight + 1px; display: block;
+    	> * { vertical-align: middle; display: inline-block; padding: 0px 5px 0px 0px; }
+  }     
+} 
+ul ul { 
+	margin: 9px 0px -9px -10px; border-top: 1px solid @listBorderColor;  
+	li {padding: 9px 0px 9px 30px;} 
+}
+ul ul ul { 
+	margin: 0px; border-bottom: 1px solid @listBorderColor; 
+	border-top: 0px; li { padding: 9px 0px 9px 50px; } 
+} 
+ul li, ol li, { &:hover { 
+  cursor: pointer; background-color: @listColorBackgroundHover !important; color: @listColorHover; 
+    h1, h2, h3, h4, h5, h6 { color: @listColorHover; } 
+} }
+
+
+
+//
+// TABLES
+// --------------------------------------------------
+table {
+  width: 100%;
+  background-color: @tableBackground;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 10px;
+  font-family: @baseFontFamily;  
+  font-size: @baseFontSize;  
+  line-height: @baseLineHeight;
+  th, td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  th { font-weight: bold; vertical-align: bottom; }
+  tr:hover { td, th { background-color: @tableBackgroundHover; } }
+}
+
+
+ 
+//
+// FORMS
+// --------------------------------------------------
+// All form elements
+// --------------------------------------------------
+label, input, button, select, textarea {
+    font-size: @baseFontSize;
+    font-weight: normal;
+    line-height: @baseLineHeight;
+    font-family: @baseFontFamily;
+    transition: all 0.3s ease-out;
+}
+select, textarea, input, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"], input[type="date"], 
+input[type="month"], input[type="time"], input[type="week"], input[type="number"], 
+input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
+input[type="color"] {
+    display: inline-block;
+    padding: 5px 8px;
+    margin:0px;
+    font-size: @baseFontSize;
+    color: @inputColor;
+    margin-top: 0px;
+    margin-bottom: @baseLineHeight / 5;
+    background-color: @inputBackground;
+    border: 1px solid @inputBorder;
+    vertical-align: top;
+    .borderRadius(@inputBorderRadius); 
+    .placeholder(@placeholderText);
+    /*width: @inputWidth; */ // Default width, can be modified with grid sizes s-1 till s-12
+    &:hover { border: 1px solid lighten(@inputBorder,3%); }
+  	&:focus { border: 1px solid darken(@inputBorder,3%); .placeholder( lighten(@placeholderText,10%) ); } 
+}
+  
+// Input
+// --------------------------------------------------
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+  cursor: not-allowed;
+  background-color: @grayLightest;
+}
+input[type="search"] { box-sizing: content-box; }
+input[type="color"]  { padding: 0px 2px; }
+[disabled] { pointer-events: none; .opacity(50); }
+ 
+ 
+// Legend
+// --------------------------------------------------
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: @baseFontSize + 8px;
+  line-height: @baseLineHeight + 20px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+// Label
+// --------------------------------------------------
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height:  @baseLineHeight + 12px;
+    > input { margin-left: 5px; }
+}
+
+
+// Textarea
+// --------------------------------------------------
+textarea { height: auto; resize:none; }
+
+// Select box
+// --------------------------------------------------
+select {
+    height: @inputHeight + 10px;
+    line-height: @inputHeight + 10px;
+    &[multiple], &[size] { height: auto; }
+}
+
+// Radio and Checkbox
+// --------------------------------------------------
+input[type="radio"], input[type="checkbox"] { margin: 0px 8px 0px 0px; vertical-align: baseline; } 
+
+
+// Buttons
+// --------------------------------------------------
+button, input[type="button"], input[type="reset"], input[type="submit"] { 
+    -webkit-appearance: button;
+    cursor: pointer; 
+    font-family: inherit;
+    font-size: @baseFontSize;
+    font-weight: bold;
+    line-height: @baseLineHeight;
+    *line-height: @baseLineHeight;
+    text-align: center;
+    color: @btnColor;
+
+    vertical-align: top;
+    border: 1px solid @btnBorder;
+    background-color: @btnBackground; 
+    padding: 5px 12px;
+    margin:0px;
+    filter:chroma(color=#000000); // removes black border of button in IE7
+    .borderRadius(@baseBorderRadius);
+  
+    &:hover {
+      cursor: pointer; 
+      text-decoration: none;
+      background-color: @btnBackgroundHover;
+      *background-color: @btnBackgroundHover; /* Buttons in IE7 don't get borders, so darken on hover */
+    }
+} 
+
+
+ 
+//
+// NAVBAR
+// --------------------------------------------------
+nav {
+	background-color: @navBackground;
+  	padding: 0px 40px;
+    a { 
+      display: inline-block;
+      padding: 9px 10px;
+      color: @navLinkColor; font-size: @navLinkFontSize;
+      &:hover, &:active { color: @navLinkColorHover; }
+    }
+}
+nav ~ article { margin-top: 70px !important; }
+
+
+
+//
+// Header + Footer
+// --------------------------------------------------
+header {
+  padding: 80px 0px 10px;
+}  
+
+footer { 
+	padding: 20px 0;
+	margin-top: 70px;
+	border-top: 1px solid @grayLighter;
+	background-color: @whiteSmoke;
+  li {
+      display: inline-block;
+      border:none;
+      padding: 0 8px;
+      &:first-child { padding-left: 0; }
+      > a { font-size: @baseFontSize; line-height: @baseLineHeight;} 
+  } 
+}   
+
+
+// Mixins
+// --------------------------------------------------
+// Placeholder text
+.placeholder(@color: @placeholderText) {
+  &:-moz-placeholder { color: @color; }
+  &:-ms-input-placeholder { color: @color; }
+  &::-webkit-input-placeholder { color: @color; }
+} 
+
+// Border Radius
+.borderRadius(@radius: 1px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
